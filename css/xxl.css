@@ -664,7 +664,7 @@ main{
 }
 /*NFT*/
 .nft{
-    background-image: url("/public/images/NFT.png");
+    background-image: url("public/images/NFT.png");
     background-color: #cccccc;
     background-position: center;
     background-repeat: no-repeat;
