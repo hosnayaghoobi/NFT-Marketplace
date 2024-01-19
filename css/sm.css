@@ -1,0 +1,174 @@
+header{
+    padding: 15px 30px;
+}
+/*main*/
+.hero{
+    padding: 40px 30px;
+    row-gap: 20px;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5,auto);
+    grid-template-areas:
+    "title title"
+    "paragraph paragraph"
+    "picture picture"
+    "link link"
+    "statics statics";
+}
+.hero .hero-link{
+    display: flex;
+    justify-self: stretch;
+}
+.hero .hero-title{
+    font-size: 38px;
+}
+.hero .hero-paragraph{
+    font-size: 16px;
+}
+.hero .hero-statics{
+    text-align: center;
+    justify-self: center;
+}
+.hero .hero-statics .hero-static .hero-number{
+    font-size: 22px;
+}
+.hero .hero-statics .hero-static .hero-staticTitle{
+    font-size: 16px;
+}
+/*trending-section*/
+.trending .trending-cards .trending-card:nth-child(2){
+    display: none;
+}
+.trending .trending-cards{
+    width: 100%;
+}
+.trending .trending-cards{
+    justify-content: center;
+    gap: 0;
+}
+/*artists-section*/
+.artists .artists-cards-grid .artists-cards-row{
+    grid-template-rows: repeat(4,auto);
+    grid-template-columns: repeat(1,auto);
+}
+.artists .artists-cards-grid .artists-cards-row .artist-card .artists-info .artists-more-info{
+    justify-content: start;
+}
+.artists .artists-cards-grid .artists-cards-row .artist-card{
+    column-gap: 20px;
+    row-gap: 0;
+}
+/*Browse Categories*/
+.categories .categories-cards-grid{
+    grid-template-rows: repeat(4,auto);
+}
+.categories .categories-cards-grid .categories-cards-row{
+    grid-template-rows: repeat(2,auto);
+    grid-template-columns: repeat(2,auto);
+    gap: 20px;
+}
+/*Discover*/
+.discover{
+    grid-template-areas:
+    "headline headline"
+    "cards cards"
+    "button button";
+    justify-items: center;
+    row-gap: 40px;
+    padding: 60px 30px;
+    margin-bottom: 50px;
+}
+.discover .discover-button{
+    grid-area: button;
+    width: 100%;
+    margin-top: 50%;
+}
+.discover .discover-headline{
+    grid-area: headline;
+}
+.discover .discover-cards-row{
+    grid-area: cards;
+    grid-template-rows: repeat(3,auto);
+    grid-template-columns: none;
+    row-gap: 20px;
+}
+.discover .discover-cards-row .discover-nft-card:nth-child(3){
+    display: block;
+    background-color: red;
+}
+/*NFT*/
+.nft .frame{
+    padding: 120px 195px 40px 195px;
+    grid-template-columns: none;
+    grid-template-rows: repeat(2,auto);
+    row-gap: 30px;
+}
+.nft .frame .nft-auction-timer{
+    justify-self: center;
+}
+/*Hint*/
+.hint .hint-row-cards{
+    grid-template-columns: none;
+    grid-template-rows: repeat(3,auto);
+    row-gap: 20px;
+    column-gap: 0;
+}
+.hint .hint-row-cards .hint-info-card{
+    padding: 20px;
+    grid-template-rows: none;
+    grid-template-columns: repeat(2,auto);
+    row-gap: 0;
+    column-gap: 20px;
+}
+.hint .hint-row-cards .hint-info-card img{
+    width: 100px;
+    height: 100px;
+}
+/*Subscribe*/
+.subscribe{
+    padding: 40px 0;
+}
+.subscribe .subscribe-widget{
+    background-color: #2B2B2B;
+    grid-template-columns: none;
+    grid-template-rows: repeat(2,auto);
+    column-gap: 0;
+    row-gap: 30px;
+    justify-items: center;
+}
+.subscribe .subscribe-widget img{
+    width: 315px;
+    height: 255px;
+}
+.subscribe .subscribe-widget .subscribe-frame .subscribe-form{
+    background-color: #2B2B2B;
+}
+.subscribe .subscribe-widget .subscribe-frame{
+    row-gap: 40px;
+}
+.subscribe .subscribe-widget .subscribe-frame .subscribe-form button{
+    align-items: center;
+}
+/*footer*/
+.footer .footer-info .footer-subscribe .footer-subscribe-info .subscribe-form{
+    background-color: #3B3B3B;
+    grid-template-columns: none;
+    grid-template-rows: repeat(2,auto);
+    column-gap: 0;
+    row-gap: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.footer .footer-info .footer-subscribe .footer-subscribe-info{
+    row-gap: 40px;
+}
+.footer .footer-info .footer-subscribe .footer-subscribe-info .subscribe-email{
+    width: 100%;
+    height: 46px;
+    padding: 14px 20px;
+    border-radius: 20px;
+    border: 1px solid var(--caption-label-text, #858584);
+    background: var(--Text, #FFF);
+}
+.footer .footer-info .footer-subscribe .footer-subscribe-info .subscribe-form button{
+    width: 100%;
+}
